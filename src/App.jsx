@@ -3,6 +3,7 @@ import "modern-normalize";
 import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
+import Notification from "./components/Notification/Notification";
 import { useEffect, useState } from "react";
 
 const App = () => {
@@ -51,7 +52,7 @@ const App = () => {
         total={totalFeedback}
       ></Options>
       {totalFeedback === 0 ? (
-        <p>No feedback yet</p>
+        <Notification></Notification>
       ) : (
         <Feedback
           good={response.good}
