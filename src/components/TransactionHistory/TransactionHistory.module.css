@@ -1,0 +1,27 @@
+.transactionsTable {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.tableHead {
+  background-color: black;
+  color: white;
+}
+
+.tableBody {
+  background-color: white;
+}
+
+.tableBody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tableBody tr:hover {
+  background-color: #bbb;
+}
+
+.tableHead th,
+.tableBody td {
+  border: 1px solid darkslategray;
+}
